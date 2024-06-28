@@ -142,7 +142,7 @@ class FirstPageLayout extends StatelessWidget {
                   Navigator.pushNamed(context, '/mathematics');
                 },
               ),
-              SizedBox(height: 24.0), // Increased spacing between boxes
+              SizedBox(height: 24.0), //spacing between boxes
               // Physics Box
               _buildSubjectBox(
                 subject: 'Physics',
@@ -153,7 +153,7 @@ class FirstPageLayout extends StatelessWidget {
                   Navigator.pushNamed(context, '/physics');
                 },
               ),
-              SizedBox(height: 24.0), // Increased spacing between boxes
+              SizedBox(height: 24.0), // spacing between boxes
               // Chemistry Box
               _buildSubjectBox(
                 subject: 'Chemistry',
@@ -179,7 +179,7 @@ class FirstPageLayout extends StatelessWidget {
     VoidCallback? onPressed,
   }) {
     return Container(
-      height: 200.0, // Increased height for larger boxes
+      height: 200.0, // height for  boxes
       width: double.infinity,
       margin: EdgeInsets.symmetric(horizontal: 16.0),
       decoration: BoxDecoration(
@@ -231,10 +231,10 @@ class FirstPageLayout extends StatelessWidget {
           ),
           Positioned(
             bottom: 30.0,
-            left: 20.0, // Adjusted to cut the progress bar from the left
-            right: 150.0, // Adjusted to leave space for the button
+            left: 20.0, 
+            right: 150.0, 
             child: LinearProgressIndicator(
-              value: 0.0, // Default progress value, you can change this
+              value: 0.0, // Default progress value
               backgroundColor: Colors.black.withOpacity(0.3),
               valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
               minHeight: 8,
@@ -244,8 +244,8 @@ class FirstPageLayout extends StatelessWidget {
             bottom: 20.0,
             right: 16.0,
             child: Container(
-              width: 35.0, // Reduced width of the circle
-              height: 35.0, // Reduced height of the circle
+              width: 35.0,
+              height: 35.0, 
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.white,
@@ -253,7 +253,7 @@ class FirstPageLayout extends StatelessWidget {
               child: Center(
                 child: IconButton(
                   iconSize:
-                      20.0, // Reduced icon size to fit within the smaller circle
+                      20.0, 
                   icon: Icon(Icons.arrow_forward),
                   color: Colors.black,
                   onPressed: onPressed,
